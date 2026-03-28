@@ -157,4 +157,14 @@
     </div>
 </body>
 
+<p>Views: <span id="visits">Loading...</span></p>
+
+<script>
+fetch('https://api.countapi.xyz/hit/jefferson-biason-resume/visits')
+  .then(res => res.json())
+  .then(res => {
+    document.getElementById('visits').innerText = res.value;
+  });
+</script>
+
 </html>
