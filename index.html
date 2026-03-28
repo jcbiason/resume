@@ -7,11 +7,11 @@
     <title>Jefferson Biason - Resume</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      @media print {
-        .no-print {
-          display: none !important;
+        @media print {
+            .no-print {
+                display: none !important;
+            }
         }
-      }
     </style>
 </head>
 
@@ -58,7 +58,8 @@
         <section class="mb-8">
             <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Skills</h2>
             <ul class="list-disc pl-5 space-y-1">
-                <li>System Design: State Machines, Event-Driven Architectures, Scalability & Performance Optimization, Microservices</li>
+                <li>System Design: State Machines, Event-Driven Architectures, Scalability & Performance Optimization,
+                    Microservices</li>
                 <li>Programming Languages: Angular, HTML5, CSS3, Node.js, Java, VB.NET, C#, Python, SQL</li>
                 <li>Databases: PostgreSQL, Greenplum, Firebird, MySQL, In-Memory Database (IMDB)</li>
                 <li>Network Monitoring & Visualization: OpenNMS, Grafana, SNMP</li>
@@ -155,16 +156,16 @@
         <button onclick="window.print()"
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Print / Save as PDF</button>
     </div>
+    
+    <p>Views: <span id="visits">Loading...</span></p>
+    <script>
+        fetch('https://api.countapi.xyz/hit/jefferson-biason-resume/visits')
+            .then(res => res.json())
+            .then(res => {
+                document.getElementById('visits').innerText = res.value;
+            });
+    </script>
+
 </body>
-
-<p>Views: <span id="visits">Loading...</span></p>
-
-<script>
-fetch('https://api.countapi.xyz/hit/jefferson-biason-resume/visits')
-  .then(res => res.json())
-  .then(res => {
-    document.getElementById('visits').innerText = res.value;
-  });
-</script>
 
 </html>
