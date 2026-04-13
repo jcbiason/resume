@@ -1,171 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jefferson Biason - Resume</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Premium Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <style>
+        body {
+            background: #ffffff;
+            font-family: 'Inter', Arial, sans-serif;
+            color: #111;
+        }
+
+        .resume {
+            max-width: 780px;
+            margin: auto;
+            padding: 28px 32px;
+        }
+
+        /* NAME */
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 0.6px;
+            margin-bottom: 2px;
+        }
+
+        /* CONTACT LINE */
+        .header {
+            font-size: 12.5px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        /* SECTION HEADERS */
+        h2 {
+            font-size: 12px;
+            font-weight: 700;
+            margin-top: 16px;
+            margin-bottom: 4px;
+            border-bottom: 1px solid #222;
+            padding-bottom: 2px;
+            letter-spacing: 0.8px;
+        }
+
+        /* TEXT */
+        p, li {
+            font-size: 12.5px;
+            line-height: 1.35;
+        }
+
+        ul {
+            padding-left: 18px;
+            margin-top: 4px;
+        }
+
+        /* EXPERIENCE ROW */
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-top: 8px;
+            font-size: 12.5px;
+            font-weight: 600;
+        }
+
+        /* ROLE */
+        .role {
+            font-style: italic;
+            font-size: 12.5px;
+            margin-top: 1px;
+            color: #222;
+        }
+
+        /* BULLET SPACING */
+        .compact li {
+            margin-bottom: 3px;
+        }
+
+        /* PRINT OPTIMIZATION */
         @media print {
-            .no-print {
-                display: none !important;
+            body {
+                margin: 0;
+            }
+            .resume {
+                padding: 10px 14px;
             }
         }
     </style>
 </head>
 
-<body class="bg-gray-100 text-black font-sans">
-    <div class="max-w-4xl mx-auto p-8 bg-white shadow-lg mt-10">
-        <!-- Header -->
-        <div class="flex justify-between items-center border-b pb-4 mb-6">
-            <div>
-                <h1 class="text-4xl font-bold">Jefferson Biason</h1>
-                <p class="text-lg text-gray-600">Integration Engineer / Lead Application Support</p>
-                <p class="text-sm text-gray-600">j.biason.07@gmail.com | +63 9173112727</p>
-                <p class="text-sm text-gray-600">56B Bagong Lote St. Potrero, Malabon City</p>
-            </div>
-            <div class="w-32 h-32 rounded-full overflow-hidden border-2 border-gray-300">
-                <img src="profile_image.jpg" alt="Jefferson Biason" class="w-full h-full object-cover">
-            </div>
-        </div>
+<body>
+<div class="resume">
 
-        <!-- Profile Section -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Profile</h2>
-            <ul class="list-disc pl-5 space-y-1">
-                <li>
-                    Analytical and detail-oriented IT professional with extensive experience in managed services,
-                    specializing in application support and integration engineering. Proven track record in delivering
-                    24/7 support, managing critical operations, and troubleshooting complex issues to ensure system
-                    stability and high availability.
-                </li>
-                <li>
-                    Skilled in software development and database administration, with expertise in building,
-                    maintaining, and optimizing robust applications across platforms. Adept at working with global
-                    telecom clients, addressing integration challenges across diverse systems and regions.
-                </li>
-                <li>
-                    Recognized as a fast learner and effective communicator, able to explain complex technical concepts
-                    to both technical and non-technical stakeholders. Experienced in leading teams, managing software
-                    updates, and implementing efficient solutions, consistently driving performance and reliability for
-                    technology-driven organizations.
-                </li>
-            </ul>
-        </section>
+    <!-- HEADER -->
+    <h1>JEFFERSON BIASON</h1>
+    <p class="header">
+        Malabon City, Philippines · +63 9173112727 · j.biason.07@gmail.com
+    </p>
 
-        <!-- Skills Section -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Skills</h2>
-            <ul class="list-disc pl-5 space-y-1">
-                <li>System Design: State Machines, Event-Driven Architectures, Scalability & Performance Optimization,
-                    Microservices</li>
-                <li>Programming Languages: Angular, HTML5, CSS3, Node.js, Java, VB.NET, C#, Python, SQL</li>
-                <li>Databases: PostgreSQL, Greenplum, Firebird, MySQL, In-Memory Database (IMDB)</li>
-                <li>Network Monitoring & Visualization: OpenNMS, Grafana, SNMP</li>
-                <li>Web Services & APIs: Nginx, RESTful, SOAP, XML, JSON</li>
-                <li>Operating Systems: Windows, Unix/Linux (RedHat Enterprise Linux)</li>
-                <li>Shell Scripting</li>
-                <li>Software Testing & Automation</li>
-                <li>System Administration & Infrastructure Engineering</li>
-                <li>Project Management & Software Deployment</li>
-                <li>Software documentation and troubleshooting</li>
-                <li>SS7 (Signaling System 7) & Telecommunications</li>
-                <li>Other Tools & Platforms: Git, Docker, Portainer, Eclipse, Selenium</li>
-            </ul>
-        </section>
+    <!-- SUMMARY -->
+    <h2>SUMMARY</h2>
+    <p>
+        Technical Lead and Integration Engineer specializing in high-availability telecom systems, distributed architectures,
+        and mission-critical environments. Proven experience supporting millions of subscribers, leading multi-country deployments,
+        and maintaining near 100% system uptime through proactive engineering and rapid incident response.
+    </p>
 
-        <!-- Education Section -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Education</h2>
-            <p class="text-lg font-bold">Bachelor of Science in Computer Science</p>
-            <p class="text-sm text-gray-600">De La Salle Araneta University, May 2017</p>
-        </section>
+    <!-- SKILLS -->
+    <h2>SKILLS</h2>
+    <p>
+        <strong>Languages:</strong> Java, Python, C#, VB.NET, Node.js, Angular, SQL ·
+        <strong>Architecture:</strong> Microservices, Event-Driven Systems ·
+        <strong>Databases:</strong> PostgreSQL, MySQL, Greenplum ·
+        <strong>Tools:</strong> Docker, Git, Grafana, OpenNMS ·
+        <strong>Other:</strong> Linux, REST/SOAP APIs, Shell Scripting, SS7
+    </p>
 
-        <!-- Work Experience Section -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Work Experience</h2>
+    <!-- EXPERIENCE -->
+    <h2>EXPERIENCE</h2>
 
-            <div class="mb-6">
-                <p class="text-lg font-bold">Technical Lead | Pelatro Pte. Ltd. (Remote)</p>
-                <p class="text-sm text-gray-600">February 2019 – Present</p>
-                <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
-                    <li>
-                        Served as an Integration Engineer and Technical Lead for multiple projects,
-                        overseeing system integration design, execution, and deployment while ensuring system
-                        reliability and seamless platform communication.
-                        Collaborated with cross-functional teams and global telecom clients to troubleshoot issues,
-                        gather requirements,
-                        and deliver tailored solutions that enhanced functionality and client satisfaction. Conducted
-                        software testing to validate functionality,
-                        implemented continuous improvements, and optimized processes to drive project success and system
-                        performance.
-                    </li>
-                </ul>
-            </div>
+    <div class="row">
+        <span>Pelatro Pte. Ltd. (Remote)</span>
+        <span>2019 – Present</span>
+    </div>
+    <div class="role">Technical Lead / Integration Engineer</div>
+    <ul class="compact">
+        <li>Owned end-to-end delivery of complex telecom system integrations supporting millions of subscribers.</li>
+        <li>Developed and integrated APIs with multiple third-party systems, enabling scalable service expansion.</li>
+        <li>Acted as primary escalation point, handling dozens of production incidents weekly and restoring system stability.</li>
+        <li>Led large-scale deployments across multiple countries, ensuring reliable production rollouts.</li>
+        <li>Improved system uptime to near 100% through proactive monitoring, rapid incident response, and optimization.</li>
+        <li>Partnered with global stakeholders to deliver robust, production-ready solutions.</li>
+    </ul>
 
-            <div class="mb-6">
-                <p class="text-lg font-bold">Software Engineer | HCL Technologies</p>
-                <p class="text-sm text-gray-600">June 2018 – February 2019</p>
-                <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
-                    <li>
-                        Started as an L2 Application Support Engineer, providing hands-on troubleshooting and technical
-                        support for critical business applications. Consistently recognized for strong problem-solving
-                        skills, effective collaboration, and reliable performance, which led to a promotion to Team
-                        Lead.
-                    </li>
-                    <li>
-                        As Team Lead, I managed a 24/7 managed services application support team, overseeing daily
-                        operations and ensuring seamless support for critical systems.
-                        Led troubleshooting efforts to resolve complex technical issues, maintained system uptime,
-                        and coordinated software deployments to minimize downtime and enhance efficiency. Managed
-                        escalations, mentored team members, and fostered cross-team collaboration to ensure timely and
-                        effective resolution of incidents.
-                        Documented technical issues and solutions to facilitate knowledge transfer and drive process
-                        improvements.
-                    </li>
-                </ul>
-            </div>
+    <div class="row">
+        <span>HCL Technologies</span>
+        <span>2018 – 2019</span>
+    </div>
+    <div class="role">Software Engineer / Team Lead</div>
+    <ul class="compact">
+        <li>Led 24/7 support operations for business-critical systems requiring continuous availability.</li>
+        <li>Managed high-frequency production incidents with deep troubleshooting and root cause analysis.</li>
+        <li>Coordinated deployments and system changes to minimize downtime and operational risk.</li>
+        <li>Mentored engineers and improved team effectiveness through structured knowledge sharing.</li>
+    </ul>
 
-            <div class="mb-6">
-                <p class="text-lg font-bold">Junior Infrastructure Engineer | Indra Sistemas</p>
-                <p class="text-sm text-gray-600">July 2017 – June 2018</p>
-                <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
-                    <li>Provided 24/7 managed services application support for a local telecom provider,
-                        resolving complex technical issues to ensure uninterrupted service and high system reliability.
-                        Diagnosed and resolved software problems, collaborated with development teams to optimize
-                        applications,
-                        and maintained detailed documentation to support continuous improvement efforts.</li>
-                </ul>
-            </div>
-        </section>
+    <div class="row">
+        <span>Indra Sistemas</span>
+        <span>2017 – 2018</span>
+    </div>
+    <div class="role">Junior Infrastructure Engineer</div>
+    <ul class="compact">
+        <li>Supported telecom platforms with strict uptime requirements in a managed services environment.</li>
+        <li>Diagnosed and resolved production issues across application and infrastructure layers.</li>
+        <li>Collaborated with engineering teams to enhance system reliability and performance.</li>
+    </ul>
 
-        <!-- Certifications Section -->
-        <!-- <section>
-            <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Certifications</h2>
-            <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
-                <li>AWS Certified Developer – Associate</li>
-                <li>Certified Scrum Developer (CSD)</li>
-                <li>Microsoft Certified: Azure Developer Associate</li>
-            </ul>
-        </section> -->
+    <!-- EDUCATION -->
+    <h2>EDUCATION</h2>
+    <div class="row">
+        <span>B.S. Computer Science, De La Salle Araneta University</span>
+        <span>2017</span>
     </div>
 
-    <!-- Print Button -->
-    <div class="flex justify-center mt-8 no-print">
-        <button onclick="window.print()"
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Print / Save as PDF</button>
-    </div>
-    
-    <p>Views: <span id="visits">Loading...</span></p>
-    <script>
-        fetch('https://api.countapi.xyz/hit/jefferson-biason-resume/visits')
-            .then(res => res.json())
-            .then(res => {
-                document.getElementById('visits').innerText = res.value;
-            });
-    </script>
-
+</div>
 </body>
-
 </html>
