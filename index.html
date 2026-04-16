@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,162 +8,195 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <style>
+<style>
+    /* === PAPER EFFECT ONLY === */
+    body {
+        background: #e8e8e8;  /* Light gray background */
+        font-family: 'Inter', Arial, sans-serif;
+        color: #111;
+        margin: 0;
+        padding: 24px 16px;  /* Just centers the page, doesn't affect resume content */
+        display: flex;
+        justify-content: center;
+    }
+
+    .resume {
+        background: #ffffff;  /* White "paper" */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);  /* Subtle depth */
+        max-width: 780px;  /* ← Your original value preserved */
+        margin: auto;
+        padding: 28px 32px;  /* ← Your original value preserved */
+    }
+    /* === END PAPER EFFECT === */
+
+    h1 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: 0.6px;
+        margin-bottom: 2px;
+        margin-top: 0px;
+    }
+
+    .header {
+        font-size: 12.5px;
+        color: #444;
+        margin-bottom: 10px;
+        margin-top: 2px;
+    }
+
+    h2 {
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 16px;
+        margin-bottom: 4px;
+        border-bottom: 1px solid #222;
+        padding-bottom: 2px;
+        letter-spacing: 0.8px;
+    }
+
+    p, li {
+        font-size: 12.5px;
+        line-height: 1.35;
+    }
+
+    ul {
+        padding-left: 18px;
+        margin-top: 4px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-top: 8px;
+        font-size: 12.5px;
+        font-weight: 600;
+    }
+
+    .role {
+        font-style: italic;
+        font-size: 12.5px;
+        margin-top: 1px;
+        color: #222;
+    }
+
+    .compact li {
+        margin-bottom: 3px;
+    }
+
+    /* Print: remove visual effects only */
+    @media print {
         body {
             background: #ffffff;
-            font-family: 'Inter', Arial, sans-serif;
-            color: #111;
+            margin: 0;
+            padding: 0;
+            display: block;
         }
-
         .resume {
-            max-width: 780px;
-            margin: auto;
-            padding: 28px 32px;
+            box-shadow: none;
+            background: #ffffff;
+            /* All your original padding/margins stay intact */
         }
-
-        h1 {
-            font-size: 28px;
-            font-weight: 800;
-            letter-spacing: 0.6px;
-            margin-bottom: 2px;
-        }
-
-        .header {
-            font-size: 12.5px;
-            color: #444;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 12px;
-            font-weight: 700;
-            margin-top: 16px;
-            margin-bottom: 4px;
-            border-bottom: 1px solid #222;
-            padding-bottom: 2px;
-            letter-spacing: 0.8px;
-        }
-
-        p, li {
-            font-size: 12.5px;
-            line-height: 1.35;
-        }
-
-        ul {
-            padding-left: 18px;
-            margin-top: 4px;
-        }
-
-        .row {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-top: 8px;
-            font-size: 12.5px;
-            font-weight: 600;
-        }
-
-        .role {
-            font-style: italic;
-            font-size: 12.5px;
-            margin-top: 1px;
-            color: #222;
-        }
-
-        .compact li {
-            margin-bottom: 3px;
-        }
-
-        @media print {
-            .resume {
-                padding: 10px 14px;
-            }
-        }
-    </style>
+    }
+</style>
 </head>
 
 <body>
-<div class="resume">
+    <div class="resume">
 
-    <!-- HEADER -->
-    <h1>JEFFERSON BIASON</h1>
-    <p class="header">
-        Malabon City, Philippines · +63 9173112727 · j.biason.07@gmail.com
-    </p>
+        <!-- HEADER -->
+        <h1>JEFFERSON BIASON</h1>
+        <p class="header">
+            Malabon City, Philippines · +63 9173112727 · j.biason.07@gmail.com
+        </p>
 
-    <!-- SUMMARY -->
-    <h2>SUMMARY</h2>
-    <p>
-        Technical Lead and Integration Engineer specializing in high-availability telecom systems, distributed architectures,
-        and mission-critical environments. Proven experience supporting millions of subscribers, leading multi-country deployments,
-        and maintaining near 100% system uptime through proactive engineering, observability, and system optimization.
-    </p>
+        <!-- SUMMARY -->
+        <h2>SUMMARY</h2>
+        <p>
+            Technical Lead and Integration Engineer specializing in high-availability telecom systems, distributed
+            architectures,
+            and mission-critical environments. Proven experience supporting millions of subscribers, leading
+            multi-country deployments,
+            and maintaining near 100% system uptime through proactive engineering, observability, and system
+            optimization.
+        </p>
 
-    <!-- SKILLS -->
-    <h2>SKILLS</h2>
-    <p>
-        <strong>Languages:</strong> Java, Python, C#, VB.NET, Node.js, Angular, SQL ·
-        <strong>Cloud:</strong> AWS ·
-        <strong>Distributed Systems:</strong> Kafka, Microservices, Event-Driven Architecture ·
-        <strong>Databases:</strong> PostgreSQL, MySQL, Greenplum ·
-        <strong>APIs:</strong> REST, SOAP, XML, JSON ·
-        <strong>Monitoring & Observability:</strong> Zabbix, SNMP, Grafana, OpenNMS ·
-        <strong>QA Tools:</strong> Postman, SOAPUI ·
-        <strong>DevOps & Tools:</strong> Docker, Git ·
-        <strong>Systems:</strong> Linux, Shell Scripting, SS7 ·
-        <strong>Focus:</strong> System Optimization, Application Performance Tuning
-    </p>
+        <!-- SKILLS (Original Format - Updated) -->
+        <h2>SKILLS</h2>
+        <p>
+            <strong>Languages:</strong> Java, Python, C++, C#, VB.NET, Node.js, Angular, SQL <br>
+            <strong>Cloud:</strong> AWS, GCP <br>
+            <strong>Distributed Systems:</strong> Kafka, Microservices, Event-Driven Architecture <br>
+            <strong>Databases:</strong> PostgreSQL, MySQL, Greenplum, Oracle, NoSQL (MongoDB/Cassandra) <br>
+            <strong>APIs:</strong> REST, SOAP, OAuth 2.0/OpenID Connect, XML, JSON <br>
+            <strong>Monitoring & Observability:</strong> Zabbix, SNMP, Grafana, OpenNMS <br>
+            <strong>QA Tools:</strong> Postman, SOAPUI <br>
+            <strong>DevOps & CI/CD:</strong> Docker, Git, CI/CD Pipelines, Jenkins/GitHub Actions <br>
+            <strong>Telecom Protocols:</strong> SS7, Diameter, SIP, SMPP <br>
+            <strong>Systems:</strong> Linux, Shell Scripting <br>
+            <strong>Focus:</strong> System Optimization, Application Performance Tuning, High-Availability Architecture
+        </p>
 
-    <!-- EXPERIENCE -->
-    <h2>EXPERIENCE</h2>
+        <!-- EXPERIENCE -->
+        <h2>EXPERIENCE</h2>
 
-    <div class="row">
-        <span>Pelatro Pte. Ltd. (Remote)</span>
-        <span>2019 – Present</span>
+        <div class="row">
+            <span>Pelatro Pte. Ltd. (Remote)</span>
+            <span>2019 – Present</span>
+        </div>
+        <div class="role">Technical Lead / Integration Engineer</div>
+        <ul class="compact">
+            <li>Owned end-to-end delivery of complex telecom system integrations supporting millions of subscribers.
+            </li>
+            <li>Developed and integrated REST/SOAP APIs with third-party systems; secured integrations using OAuth 2.0.
+            </li>
+            <li>Acted as primary escalation point, handling dozens of production incidents weekly and restoring system
+                stability.</li>
+            <li>Led large-scale deployments across multiple countries, ensuring reliable production rollouts with zero
+                downtime.</li>
+            <li>Improved system uptime to near 100% through proactive monitoring, Zabbix-based alerting, and SNMP-driven
+                observability.</li>
+            <li>Enhanced system reliability through application performance tuning, infrastructure optimization, and
+                CI/CD pipeline automation.</li>
+            <li>Built and supported Kafka-based event-driven pipelines for real-time data processing at scale.</li>
+            <li>Integrated telecom signaling protocols (SS7, Diameter, SIP, SMPP) for subscriber management, roaming,
+                and SMS services.</li>
+            <li>Utilized Postman and SOAPUI for API validation, contract testing, and integration troubleshooting.</li>
+        </ul>
+
+        <div class="row">
+            <span>HCL Technologies</span>
+            <span>2018 – 2019</span>
+        </div>
+        <div class="role">Software Engineer / Team Lead</div>
+        <ul class="compact">
+            <li>Led 24/7 application support operations for business-critical enterprise systems.</li>
+            <li>Managed high-frequency production incidents with deep troubleshooting and root cause analysis.</li>
+            <li>Coordinated deployments and system changes via CI/CD workflows to minimize downtime and operational
+                risk.</li>
+            <li>Applied application optimization techniques to improve system responsiveness and stability.</li>
+            <li>Mentored engineers and strengthened team capability through structured knowledge sharing.</li>
+        </ul>
+
+        <div class="row">
+            <span>Indra Sistemas</span>
+            <span>2017 – 2018</span>
+        </div>
+        <div class="role">Junior Infrastructure Engineer</div>
+        <ul class="compact">
+            <li>Supported telecom platforms with strict uptime requirements in a managed services environment.</li>
+            <li>Diagnosed and resolved application and infrastructure issues across production systems.</li>
+            <li>Collaborated with engineering teams to improve system performance and reliability.</li>
+        </ul>
+
+        <!-- EDUCATION -->
+        <h2>EDUCATION</h2>
+        <div class="row">
+            <span>B.S. Computer Science, De La Salle Araneta University</span>
+            <span>2017</span>
+        </div>
+
     </div>
-    <div class="role">Technical Lead / Integration Engineer</div>
-    <ul class="compact">
-        <li>Owned end-to-end delivery of complex telecom system integrations supporting millions of subscribers.</li>
-        <li>Developed and integrated APIs with multiple third-party systems across distributed environments.</li>
-        <li>Acted as primary escalation point, handling dozens of production incidents weekly and restoring system stability.</li>
-        <li>Led large-scale deployments across multiple countries, ensuring reliable production rollouts.</li>
-        <li>Improved system uptime to near 100% through proactive monitoring, Zabbix-based alerting, and SNMP-driven observability.</li>
-        <li>Enhanced system reliability through application performance tuning and infrastructure-level optimization.</li>
-        <li>Built and supported Kafka-based event-driven pipelines for real-time data processing.</li>
-        <li>Utilized Postman and SOAPUI for API validation, testing, and integration troubleshooting.</li>
-    </ul>
-
-    <div class="row">
-        <span>HCL Technologies</span>
-        <span>2018 – 2019</span>
-    </div>
-    <div class="role">Software Engineer / Team Lead</div>
-    <ul class="compact">
-        <li>Led 24/7 application support operations for business-critical enterprise systems.</li>
-        <li>Managed high-frequency production incidents with deep troubleshooting and root cause analysis.</li>
-        <li>Coordinated deployments and system changes to minimize downtime and operational risk.</li>
-        <li>Applied application optimization techniques to improve system responsiveness and stability.</li>
-        <li>Mentored engineers and strengthened team capability through structured knowledge sharing.</li>
-    </ul>
-
-    <div class="row">
-        <span>Indra Sistemas</span>
-        <span>2017 – 2018</span>
-    </div>
-    <div class="role">Junior Infrastructure Engineer</div>
-    <ul class="compact">
-        <li>Supported telecom platforms with strict uptime requirements in a managed services environment.</li>
-        <li>Diagnosed and resolved application and infrastructure issues across production systems.</li>
-        <li>Collaborated with engineering teams to improve system performance and reliability.</li>
-    </ul>
-
-    <!-- EDUCATION -->
-    <h2>EDUCATION</h2>
-    <div class="row">
-        <span>B.S. Computer Science, De La Salle Araneta University</span>
-        <span>2017</span>
-    </div>
-
-</div>
 </body>
+
 </html>
